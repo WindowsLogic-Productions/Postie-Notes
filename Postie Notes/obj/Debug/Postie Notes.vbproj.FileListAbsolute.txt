@@ -11,3 +11,16 @@ J:\Projects\Postie Notes\Postie Notes\obj\Debug\Postie Notes.exe
 J:\Projects\Postie Notes\Postie Notes\obj\Debug\Postie Notes.xml
 J:\Projects\Postie Notes\Postie Notes\obj\Debug\Postie Notes.pdb
 J:\Projects\Postie Notes\Postie Notes\bin\Debug\Postie Notes.exe.config
+J:\Projects\Postie-Notes\Postie Notes\bin\Debug\Postie Notes.exe.config
+J:\Projects\Postie-Notes\Postie Notes\bin\Debug\Postie Notes.exe
+J:\Projects\Postie-Notes\Postie Notes\bin\Debug\Postie Notes.pdb
+J:\Projects\Postie-Notes\Postie Notes\bin\Debug\Postie Notes.xml
+J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie Notes.vbprojResolveAssemblyReference.cache
+J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie_Notes.PostieMain.resources
+J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie_Notes.Resources.resources
+J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie_Notes.PostieNote.resources
+J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie_Notes.PostieNoteNew.resources
+J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie Notes.vbproj.GenerateResource.Cache
+J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie Notes.exe
+J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie Notes.xml
+J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie Notes.pdb
