@@ -25,22 +25,23 @@ Partial Class PostieMain
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewNoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenNoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BackupNotesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DeleteNoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DeleteAllNotesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MemoboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ClearMemoboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
+        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MenuStrip1
         '
-        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.EditToolStripMenuItem, Me.HelpToolStripMenuItem})
+        Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.MemoboardToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
         Me.MenuStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
@@ -50,7 +51,7 @@ Partial Class PostieMain
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewNoteToolStripMenuItem, Me.OpenNoteToolStripMenuItem, Me.ToolStripSeparator1, Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewNoteToolStripMenuItem, Me.OpenMenuItem, Me.OpenNoteToolStripMenuItem, Me.ToolStripSeparator2, Me.BackupNotesToolStripMenuItem, Me.ToolStripSeparator1, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.FileToolStripMenuItem.Text = "File"
@@ -59,83 +60,88 @@ Partial Class PostieMain
         '
         Me.NewNoteToolStripMenuItem.Name = "NewNoteToolStripMenuItem"
         Me.NewNoteToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.NewNoteToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
-        Me.NewNoteToolStripMenuItem.Text = "New note..."
+        Me.NewNoteToolStripMenuItem.Size = New System.Drawing.Size(267, 22)
+        Me.NewNoteToolStripMenuItem.Text = "New note"
+        '
+        'OpenMenuItem
+        '
+        Me.OpenMenuItem.Name = "OpenMenuItem"
+        Me.OpenMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
+        Me.OpenMenuItem.Size = New System.Drawing.Size(267, 22)
+        Me.OpenMenuItem.Text = "Open note..."
         '
         'OpenNoteToolStripMenuItem
         '
         Me.OpenNoteToolStripMenuItem.Name = "OpenNoteToolStripMenuItem"
-        Me.OpenNoteToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.OpenNoteToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
-        Me.OpenNoteToolStripMenuItem.Text = "Open note..."
+        Me.OpenNoteToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+            Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
+        Me.OpenNoteToolStripMenuItem.Size = New System.Drawing.Size(267, 22)
+        Me.OpenNoteToolStripMenuItem.Text = "Open note externally..."
+        '
+        'ToolStripSeparator2
+        '
+        Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(264, 6)
+        '
+        'BackupNotesToolStripMenuItem
+        '
+        Me.BackupNotesToolStripMenuItem.Name = "BackupNotesToolStripMenuItem"
+        Me.BackupNotesToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.B), System.Windows.Forms.Keys)
+        Me.BackupNotesToolStripMenuItem.Size = New System.Drawing.Size(267, 22)
+        Me.BackupNotesToolStripMenuItem.Text = "Backup notes..."
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(179, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(264, 6)
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(182, 22)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(267, 22)
         Me.ExitToolStripMenuItem.Text = "Exit"
         '
-        'EditToolStripMenuItem
+        'MemoboardToolStripMenuItem
         '
-        Me.EditToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DeleteNoteToolStripMenuItem, Me.DeleteAllNotesToolStripMenuItem})
-        Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
-        Me.EditToolStripMenuItem.Size = New System.Drawing.Size(39, 20)
-        Me.EditToolStripMenuItem.Text = "Edit"
+        Me.MemoboardToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ClearMemoboardToolStripMenuItem, Me.ToolStripSeparator3, Me.SettingsToolStripMenuItem})
+        Me.MemoboardToolStripMenuItem.Name = "MemoboardToolStripMenuItem"
+        Me.MemoboardToolStripMenuItem.Size = New System.Drawing.Size(85, 20)
+        Me.MemoboardToolStripMenuItem.Text = "Memoboard"
         '
-        'DeleteNoteToolStripMenuItem
+        'ClearMemoboardToolStripMenuItem
         '
-        Me.DeleteNoteToolStripMenuItem.Name = "DeleteNoteToolStripMenuItem"
-        Me.DeleteNoteToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
-        Me.DeleteNoteToolStripMenuItem.Text = "Delete note..."
-        '
-        'DeleteAllNotesToolStripMenuItem
-        '
-        Me.DeleteAllNotesToolStripMenuItem.Name = "DeleteAllNotesToolStripMenuItem"
-        Me.DeleteAllNotesToolStripMenuItem.Size = New System.Drawing.Size(163, 22)
-        Me.DeleteAllNotesToolStripMenuItem.Text = "Delete all notes..."
-        '
-        'HelpToolStripMenuItem
-        '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
-        Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
-        Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.HelpToolStripMenuItem.Text = "Help"
-        '
-        'AboutToolStripMenuItem
-        '
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
-        Me.AboutToolStripMenuItem.Text = "About"
+        Me.ClearMemoboardToolStripMenuItem.Name = "ClearMemoboardToolStripMenuItem"
+        Me.ClearMemoboardToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+            Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
+        Me.ClearMemoboardToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
+        Me.ClearMemoboardToolStripMenuItem.Text = "Clear memoboard"
         '
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
-        'WebBrowser1
+        'SettingsToolStripMenuItem
         '
-        Me.WebBrowser1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.WebBrowser1.Location = New System.Drawing.Point(0, 24)
-        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(624, 417)
-        Me.WebBrowser1.TabIndex = 1
+        Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
+        Me.SettingsToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
+        Me.SettingsToolStripMenuItem.Text = "Settings"
+        '
+        'ToolStripSeparator3
+        '
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(240, 6)
         '
         'PostieMain
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(624, 441)
-        Me.Controls.Add(Me.WebBrowser1)
         Me.Controls.Add(Me.MenuStrip1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
-        Me.MaximizeBox = False
+        Me.MinimumSize = New System.Drawing.Size(640, 480)
         Me.Name = "PostieMain"
         Me.Text = "Postie Memoboard"
         Me.MenuStrip1.ResumeLayout(False)
@@ -148,14 +154,15 @@ Partial Class PostieMain
     Friend WithEvents MenuStrip1 As MenuStrip
     Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents EditToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents NewNoteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OpenNoteToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents DeleteNoteToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents DeleteAllNotesToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents HelpToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
-    Friend WithEvents WebBrowser1 As WebBrowser
+    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
+    Friend WithEvents BackupNotesToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents OpenMenuItem As ToolStripMenuItem
+    Friend WithEvents MemoboardToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ClearMemoboardToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents SettingsToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ToolStripSeparator3 As ToolStripSeparator
 End Class

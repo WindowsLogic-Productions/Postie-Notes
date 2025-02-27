@@ -1,0 +1,14 @@
+J:\Projects\Postie-Notes\Postie Notes\bin\Release\Postie Notes.exe.config
+J:\Projects\Postie-Notes\Postie Notes\bin\Release\Postie Notes.exe
+J:\Projects\Postie-Notes\Postie Notes\bin\Release\Postie Notes.pdb
+J:\Projects\Postie-Notes\Postie Notes\bin\Release\Postie Notes.xml
+J:\Projects\Postie-Notes\Postie Notes\obj\Release\Postie_Notes.PostieMain.resources
+J:\Projects\Postie-Notes\Postie Notes\obj\Release\Postie_Notes.Resources.resources
+J:\Projects\Postie-Notes\Postie Notes\obj\Release\Postie_Notes.PostieNote.resources
+J:\Projects\Postie-Notes\Postie Notes\obj\Release\Postie Notes.vbproj.GenerateResource.cache
+J:\Projects\Postie-Notes\Postie Notes\obj\Release\Postie Notes.vbproj.CoreCompileInputs.cache
+J:\Projects\Postie-Notes\Postie Notes\obj\Release\Postie Notes.exe
+J:\Projects\Postie-Notes\Postie Notes\obj\Release\Postie Notes.xml
+J:\Projects\Postie-Notes\Postie Notes\obj\Release\Postie Notes.pdb
+J:\Projects\Postie-Notes\Postie Notes\obj\Release\Postie Notes.vbprojAssemblyReference.cache
+J:\Projects\Postie-Notes\Postie Notes\obj\Release\Postie_Notes.PostieSettings.resources
