@@ -5,7 +5,6 @@ Public Class PostieMain
         Dim postie As New PostieNote
         postie.MdiParent = Me
         postie.Show()
-        postie.TextBox1.Text = "New Note"
     End Sub
 
     Private Sub PostieMain_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -86,5 +85,9 @@ Public Class PostieMain
 
     Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
         PostieSettings.ShowDialog()
+    End Sub
+
+    Private Sub PostieMain_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+
     End Sub
 End Class

@@ -63,9 +63,11 @@ Public Class PostieNote
         If File.Exists(My.Settings.DefaultSaveDirectory + "\" + TextBox1.Text + ".pns") = True Then
             If MsgBox("Are you sure you want to delete this note?", MsgBoxStyle.YesNo, "Delete Note") = MsgBoxResult.Yes Then
                 My.Computer.FileSystem.DeleteFile(My.Settings.DefaultSaveDirectory + "\" + TextBox1.Text + ".pns")
+                My.Settings.DiscardNote = 1
                 Me.Close()
             End If
         Else
+            My.Settings.DiscardNote = 1
             Me.Close()
         End If
     End Sub
@@ -81,7 +83,6 @@ Public Class PostieNote
     End Sub
 
     Private Sub HideToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles HideToolStripMenuItem.Click
-        RichTextBox1.SaveFile(My.Settings.DefaultSaveDirectory + "\" + TextBox1.Text + ".pns")
         Me.Close()
     End Sub
 
@@ -99,6 +100,8 @@ Public Class PostieNote
     End Sub
 
     Private Sub PostieNote_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        My.Settings.DiscardNote = 0
+
         Dim KEY_128 As Byte() = {42, 1, 52, 67, 231, 13, 94, 101, 123, 6, 0, 12, 32, 91, 4, 111, 31, 70, 21, 141, 123, 142, 234, 82, 95, 129, 187, 162, 12, 55, 98, 23}
         Dim IV_128 As Byte() = {234, 12, 52, 44, 214, 222, 200, 109, 2, 98, 45, 76, 88, 53, 23, 78}
         Dim symmetricKey As RijndaelManaged = New RijndaelManaged()
@@ -132,6 +135,13 @@ Public Class PostieNote
             End If
         Else
             Me.Close()
+        End If
+    End Sub
+
+    Private Sub PostieNote_FormClosing(sender As Object, e As FormClosingEventArgs) Handles MyBase.FormClosing
+        If My.Settings.DiscardNote = 1 Then
+        Else
+            RichTextBox1.SaveFile(My.Settings.DefaultSaveDirectory + "\" + TextBox1.Text + ".pns")
         End If
     End Sub
 End Class

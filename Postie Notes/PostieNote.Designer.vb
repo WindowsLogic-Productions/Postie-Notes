@@ -43,13 +43,13 @@ Partial Class PostieNote
         Me.YellowToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.YellowToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.DeleteNoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.HideToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolTip1 = New System.Windows.Forms.ToolTip(Me.components)
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.NewButton = New System.Windows.Forms.Button()
         Me.DeleteButton = New System.Windows.Forms.Button()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.DeleteNoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TextBoxOptions.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -72,14 +72,14 @@ Partial Class PostieNote
         Me.TextBoxOptions.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EncryptNoteToolStripMenuItem, Me.DecryptNoteToolStripMenuItem, Me.ToolStripSeparator4, Me.CutToolStripMenuItem, Me.CopyToolStripMenuItem, Me.PasteToolStripMenuItem, Me.DeleteToolStripMenuItem, Me.ToolStripSeparator1, Me.SelectAllToolStripMenuItem, Me.ToolStripSeparator2, Me.BlueToolStripMenuItem, Me.GreenToolStripMenuItem, Me.PinkToolStripMenuItem, Me.PurpleToolStripMenuItem, Me.WhiteToolStripMenuItem, Me.YellowToolStripMenuItem, Me.YellowToolStripMenuItem1, Me.ToolStripSeparator3, Me.DeleteNoteToolStripMenuItem, Me.HideToolStripMenuItem})
         Me.TextBoxOptions.Name = "TextBoxOptions"
         Me.TextBoxOptions.RenderMode = System.Windows.Forms.ToolStripRenderMode.System
-        Me.TextBoxOptions.Size = New System.Drawing.Size(218, 402)
+        Me.TextBoxOptions.Size = New System.Drawing.Size(218, 380)
         '
         'EncryptNoteToolStripMenuItem
         '
         Me.EncryptNoteToolStripMenuItem.Name = "EncryptNoteToolStripMenuItem"
         Me.EncryptNoteToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.EncryptNoteToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.EncryptNoteToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.EncryptNoteToolStripMenuItem.Text = "Encrypt note"
         '
         'DecryptNoteToolStripMenuItem
@@ -87,111 +87,119 @@ Partial Class PostieNote
         Me.DecryptNoteToolStripMenuItem.Name = "DecryptNoteToolStripMenuItem"
         Me.DecryptNoteToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
             Or System.Windows.Forms.Keys.D), System.Windows.Forms.Keys)
-        Me.DecryptNoteToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.DecryptNoteToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.DecryptNoteToolStripMenuItem.Text = "Decrypt note"
         '
         'ToolStripSeparator4
         '
         Me.ToolStripSeparator4.Name = "ToolStripSeparator4"
-        Me.ToolStripSeparator4.Size = New System.Drawing.Size(190, 6)
+        Me.ToolStripSeparator4.Size = New System.Drawing.Size(214, 6)
         '
         'CutToolStripMenuItem
         '
         Me.CutToolStripMenuItem.Name = "CutToolStripMenuItem"
         Me.CutToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.X), System.Windows.Forms.Keys)
-        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.CutToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.CutToolStripMenuItem.Text = "Cut"
         '
         'CopyToolStripMenuItem
         '
         Me.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem"
         Me.CopyToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.C), System.Windows.Forms.Keys)
-        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.CopyToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.CopyToolStripMenuItem.Text = "Copy"
         '
         'PasteToolStripMenuItem
         '
         Me.PasteToolStripMenuItem.Name = "PasteToolStripMenuItem"
         Me.PasteToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.V), System.Windows.Forms.Keys)
-        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.PasteToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.PasteToolStripMenuItem.Text = "Paste"
         '
         'DeleteToolStripMenuItem
         '
         Me.DeleteToolStripMenuItem.Name = "DeleteToolStripMenuItem"
         Me.DeleteToolStripMenuItem.ShortcutKeys = System.Windows.Forms.Keys.Delete
-        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.DeleteToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.DeleteToolStripMenuItem.Text = "Delete"
         '
         'ToolStripSeparator1
         '
         Me.ToolStripSeparator1.Name = "ToolStripSeparator1"
-        Me.ToolStripSeparator1.Size = New System.Drawing.Size(190, 6)
+        Me.ToolStripSeparator1.Size = New System.Drawing.Size(214, 6)
         '
         'SelectAllToolStripMenuItem
         '
         Me.SelectAllToolStripMenuItem.Name = "SelectAllToolStripMenuItem"
         Me.SelectAllToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.A), System.Windows.Forms.Keys)
-        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(216, 22)
+        Me.SelectAllToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.SelectAllToolStripMenuItem.Text = "Select All"
         '
         'ToolStripSeparator2
         '
         Me.ToolStripSeparator2.Name = "ToolStripSeparator2"
-        Me.ToolStripSeparator2.Size = New System.Drawing.Size(190, 6)
+        Me.ToolStripSeparator2.Size = New System.Drawing.Size(214, 6)
         '
         'BlueToolStripMenuItem
         '
         Me.BlueToolStripMenuItem.Name = "BlueToolStripMenuItem"
-        Me.BlueToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
+        Me.BlueToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.BlueToolStripMenuItem.Text = "Blue"
         '
         'GreenToolStripMenuItem
         '
         Me.GreenToolStripMenuItem.Name = "GreenToolStripMenuItem"
-        Me.GreenToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
+        Me.GreenToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.GreenToolStripMenuItem.Text = "Green"
         '
         'PinkToolStripMenuItem
         '
         Me.PinkToolStripMenuItem.Name = "PinkToolStripMenuItem"
-        Me.PinkToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
+        Me.PinkToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.PinkToolStripMenuItem.Text = "Pink"
         '
         'PurpleToolStripMenuItem
         '
         Me.PurpleToolStripMenuItem.Name = "PurpleToolStripMenuItem"
-        Me.PurpleToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
+        Me.PurpleToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.PurpleToolStripMenuItem.Text = "Purple"
         '
         'WhiteToolStripMenuItem
         '
         Me.WhiteToolStripMenuItem.Name = "WhiteToolStripMenuItem"
-        Me.WhiteToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
+        Me.WhiteToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.WhiteToolStripMenuItem.Text = "White"
         '
         'YellowToolStripMenuItem
         '
         Me.YellowToolStripMenuItem.Name = "YellowToolStripMenuItem"
-        Me.YellowToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
+        Me.YellowToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.YellowToolStripMenuItem.Text = "Black"
         '
         'YellowToolStripMenuItem1
         '
         Me.YellowToolStripMenuItem1.Name = "YellowToolStripMenuItem1"
-        Me.YellowToolStripMenuItem1.Size = New System.Drawing.Size(193, 22)
+        Me.YellowToolStripMenuItem1.Size = New System.Drawing.Size(217, 22)
         Me.YellowToolStripMenuItem1.Text = "Yellow"
         '
         'ToolStripSeparator3
         '
         Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(190, 6)
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(214, 6)
+        '
+        'DeleteNoteToolStripMenuItem
+        '
+        Me.DeleteNoteToolStripMenuItem.Name = "DeleteNoteToolStripMenuItem"
+        Me.DeleteNoteToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
+            Or System.Windows.Forms.Keys.Delete), System.Windows.Forms.Keys)
+        Me.DeleteNoteToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
+        Me.DeleteNoteToolStripMenuItem.Text = "Delete note"
         '
         'HideToolStripMenuItem
         '
         Me.HideToolStripMenuItem.Name = "HideToolStripMenuItem"
         Me.HideToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Alt Or System.Windows.Forms.Keys.F4), System.Windows.Forms.Keys)
-        Me.HideToolStripMenuItem.Size = New System.Drawing.Size(193, 22)
+        Me.HideToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
         Me.HideToolStripMenuItem.Text = "Save and close"
         '
         'TextBox1
@@ -239,14 +247,6 @@ Partial Class PostieNote
         '
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
         Me.ContextMenuStrip1.Size = New System.Drawing.Size(61, 4)
-        '
-        'DeleteNoteToolStripMenuItem
-        '
-        Me.DeleteNoteToolStripMenuItem.Name = "DeleteNoteToolStripMenuItem"
-        Me.DeleteNoteToolStripMenuItem.ShortcutKeys = CType(((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.Shift) _
-            Or System.Windows.Forms.Keys.Delete), System.Windows.Forms.Keys)
-        Me.DeleteNoteToolStripMenuItem.Size = New System.Drawing.Size(217, 22)
-        Me.DeleteNoteToolStripMenuItem.Text = "Delete note"
         '
         'PostieNote
         '

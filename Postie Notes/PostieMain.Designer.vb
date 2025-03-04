@@ -22,6 +22,7 @@ Partial Class PostieMain
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PostieMain))
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewNoteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -33,9 +34,9 @@ Partial Class PostieMain
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MemoboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClearMemoboardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripSeparator3 = New System.Windows.Forms.ToolStripSeparator()
+        Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -117,9 +118,10 @@ Partial Class PostieMain
         Me.ClearMemoboardToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
         Me.ClearMemoboardToolStripMenuItem.Text = "Clear memoboard"
         '
-        'OpenFileDialog1
+        'ToolStripSeparator3
         '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
+        Me.ToolStripSeparator3.Size = New System.Drawing.Size(240, 6)
         '
         'SettingsToolStripMenuItem
         '
@@ -128,10 +130,9 @@ Partial Class PostieMain
         Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(243, 22)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
-        'ToolStripSeparator3
+        'OpenFileDialog1
         '
-        Me.ToolStripSeparator3.Name = "ToolStripSeparator3"
-        Me.ToolStripSeparator3.Size = New System.Drawing.Size(240, 6)
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'PostieMain
         '
@@ -139,6 +140,7 @@ Partial Class PostieMain
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(624, 441)
         Me.Controls.Add(Me.MenuStrip1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.MinimumSize = New System.Drawing.Size(640, 480)

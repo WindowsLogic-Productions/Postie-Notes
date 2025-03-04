@@ -68,13 +68,13 @@ Namespace My
         
         <Global.System.Configuration.UserScopedSettingAttribute(),  _
          Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("5")>  _
-        Public Property EAmount() As Integer
+         Global.System.Configuration.DefaultSettingValueAttribute("0")>  _
+        Public Property DiscardNote() As String
             Get
-                Return CType(Me("EAmount"),Integer)
+                Return CType(Me("DiscardNote"),String)
             End Get
             Set
-                Me("EAmount") = value
+                Me("DiscardNote") = value
             End Set
         End Property
         

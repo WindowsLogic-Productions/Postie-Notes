@@ -9,11 +9,11 @@ Imports System.Runtime.InteropServices
 ' Review the values of the assembly attributes
 
 <Assembly: AssemblyTitle("Postie Notes")>
-<Assembly: AssemblyDescription("")>
-<Assembly: AssemblyCompany("")>
+<Assembly: AssemblyDescription("Keep important information secure and have it when you need it.")>
+<Assembly: AssemblyCompany("WindowsLogic Productions")>
 <Assembly: AssemblyProduct("Postie Notes")>
-<Assembly: AssemblyCopyright("Copyright © 2019")>
-<Assembly: AssemblyTrademark("")>
+<Assembly: AssemblyCopyright("Copyright © 2025 WindowsLogic Productions. All rights reserved.")>
+<Assembly: AssemblyTrademark("Postie Notes")>
 
 <Assembly: ComVisible(False)>
 
