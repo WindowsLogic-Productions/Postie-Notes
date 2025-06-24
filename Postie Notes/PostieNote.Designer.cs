@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.TextBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxNoteTitle = new System.Windows.Forms.TextBox();
             this.NewButton = new System.Windows.Forms.Button();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.ContextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
@@ -55,20 +55,20 @@
             this.ToolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.DeleteNoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.RichTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBoxNote = new System.Windows.Forms.RichTextBox();
             this.TextBoxOptions.SuspendLayout();
             this.SuspendLayout();
             // 
-            // TextBox1
+            // textBoxNoteTitle
             // 
-            this.TextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.textBoxNoteTitle.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TextBox1.BackColor = System.Drawing.Color.LemonChiffon;
-            this.TextBox1.Location = new System.Drawing.Point(37, 8);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(126, 20);
-            this.TextBox1.TabIndex = 6;
-            this.TextBox1.Text = "New Note";
+            this.textBoxNoteTitle.BackColor = System.Drawing.Color.LemonChiffon;
+            this.textBoxNoteTitle.Location = new System.Drawing.Point(37, 8);
+            this.textBoxNoteTitle.Name = "textBoxNoteTitle";
+            this.textBoxNoteTitle.Size = new System.Drawing.Size(126, 20);
+            this.textBoxNoteTitle.TabIndex = 6;
+            this.textBoxNoteTitle.Text = "New Note";
             // 
             // NewButton
             // 
@@ -127,7 +127,7 @@
             this.HideToolStripMenuItem});
             this.TextBoxOptions.Name = "TextBoxOptions";
             this.TextBoxOptions.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.TextBoxOptions.Size = new System.Drawing.Size(218, 402);
+            this.TextBoxOptions.Size = new System.Drawing.Size(218, 380);
             // 
             // EncryptNoteToolStripMenuItem
             // 
@@ -207,42 +207,49 @@
             this.BlueToolStripMenuItem.Name = "BlueToolStripMenuItem";
             this.BlueToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.BlueToolStripMenuItem.Text = "Blue";
+            this.BlueToolStripMenuItem.Click += new System.EventHandler(this.BlueToolStripMenuItem_Click);
             // 
             // GreenToolStripMenuItem
             // 
             this.GreenToolStripMenuItem.Name = "GreenToolStripMenuItem";
             this.GreenToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.GreenToolStripMenuItem.Text = "Green";
+            this.GreenToolStripMenuItem.Click += new System.EventHandler(this.GreenToolStripMenuItem_Click);
             // 
             // PinkToolStripMenuItem
             // 
             this.PinkToolStripMenuItem.Name = "PinkToolStripMenuItem";
             this.PinkToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.PinkToolStripMenuItem.Text = "Pink";
+            this.PinkToolStripMenuItem.Click += new System.EventHandler(this.PinkToolStripMenuItem_Click);
             // 
             // PurpleToolStripMenuItem
             // 
             this.PurpleToolStripMenuItem.Name = "PurpleToolStripMenuItem";
             this.PurpleToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.PurpleToolStripMenuItem.Text = "Purple";
+            this.PurpleToolStripMenuItem.Click += new System.EventHandler(this.PurpleToolStripMenuItem_Click);
             // 
             // WhiteToolStripMenuItem
             // 
             this.WhiteToolStripMenuItem.Name = "WhiteToolStripMenuItem";
             this.WhiteToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.WhiteToolStripMenuItem.Text = "White";
+            this.WhiteToolStripMenuItem.Click += new System.EventHandler(this.WhiteToolStripMenuItem_Click);
             // 
             // YellowToolStripMenuItem
             // 
             this.YellowToolStripMenuItem.Name = "YellowToolStripMenuItem";
             this.YellowToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.YellowToolStripMenuItem.Text = "Black";
+            this.YellowToolStripMenuItem.Click += new System.EventHandler(this.YellowToolStripMenuItem_Click);
             // 
             // YellowToolStripMenuItem1
             // 
             this.YellowToolStripMenuItem1.Name = "YellowToolStripMenuItem1";
             this.YellowToolStripMenuItem1.Size = new System.Drawing.Size(217, 22);
             this.YellowToolStripMenuItem1.Text = "Yellow";
+            this.YellowToolStripMenuItem1.Click += new System.EventHandler(this.YellowToolStripMenuItem1_Click);
             // 
             // ToolStripSeparator3
             // 
@@ -256,6 +263,7 @@
             | System.Windows.Forms.Keys.Delete)));
             this.DeleteNoteToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.DeleteNoteToolStripMenuItem.Text = "Delete note";
+            this.DeleteNoteToolStripMenuItem.Click += new System.EventHandler(this.DeleteNoteToolStripMenuItem_Click);
             // 
             // HideToolStripMenuItem
             // 
@@ -263,20 +271,21 @@
             this.HideToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.HideToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
             this.HideToolStripMenuItem.Text = "Save and close";
+            this.HideToolStripMenuItem.Click += new System.EventHandler(this.HideToolStripMenuItem_Click);
             // 
-            // RichTextBox1
+            // richTextBoxNote
             // 
-            this.RichTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.richTextBoxNote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.RichTextBox1.BackColor = System.Drawing.Color.LemonChiffon;
-            this.RichTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.RichTextBox1.ContextMenuStrip = this.TextBoxOptions;
-            this.RichTextBox1.Location = new System.Drawing.Point(3, 37);
-            this.RichTextBox1.Name = "RichTextBox1";
-            this.RichTextBox1.Size = new System.Drawing.Size(194, 160);
-            this.RichTextBox1.TabIndex = 7;
-            this.RichTextBox1.Text = "";
+            this.richTextBoxNote.BackColor = System.Drawing.Color.LightGreen;
+            this.richTextBoxNote.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBoxNote.ContextMenuStrip = this.TextBoxOptions;
+            this.richTextBoxNote.Location = new System.Drawing.Point(3, 37);
+            this.richTextBoxNote.Name = "richTextBoxNote";
+            this.richTextBoxNote.Size = new System.Drawing.Size(194, 160);
+            this.richTextBoxNote.TabIndex = 7;
+            this.richTextBoxNote.Text = "";
             // 
             // PostieNote
             // 
@@ -285,8 +294,8 @@
             this.BackColor = System.Drawing.Color.LemonChiffon;
             this.ClientSize = new System.Drawing.Size(200, 200);
             this.ControlBox = false;
-            this.Controls.Add(this.RichTextBox1);
-            this.Controls.Add(this.TextBox1);
+            this.Controls.Add(this.richTextBoxNote);
+            this.Controls.Add(this.textBoxNoteTitle);
             this.Controls.Add(this.NewButton);
             this.Controls.Add(this.DeleteButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
@@ -305,7 +314,7 @@
 
         #endregion
 
-        internal System.Windows.Forms.TextBox TextBox1;
+        internal System.Windows.Forms.TextBox textBoxNoteTitle;
         internal System.Windows.Forms.Button NewButton;
         internal System.Windows.Forms.Button DeleteButton;
         internal System.Windows.Forms.ContextMenuStrip ContextMenuStrip1;
@@ -331,6 +340,6 @@
         internal System.Windows.Forms.ToolStripSeparator ToolStripSeparator3;
         internal System.Windows.Forms.ToolStripMenuItem DeleteNoteToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem HideToolStripMenuItem;
-        internal System.Windows.Forms.RichTextBox RichTextBox1;
+        internal System.Windows.Forms.RichTextBox richTextBoxNote;
     }
 }

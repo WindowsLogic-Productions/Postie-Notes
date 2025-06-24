@@ -11,5 +11,8 @@
     <Setting Name="DAmount" Type="System.Int32" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="NoteColour" Type="System.String" Scope="User">
+      <Value Profile="(Default)">yellow</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

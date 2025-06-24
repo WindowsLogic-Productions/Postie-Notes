@@ -67,7 +67,7 @@ namespace Postie_Notes
 
         private void DeleteButton_Click(object sender, EventArgs e)
         {
-            string filePath = System.IO.Path.Combine(Properties.Settings.Default.DefaultSaveDirectory, TextBox1.Text + ".pns");
+            string filePath = System.IO.Path.Combine(Properties.Settings.Default.DefaultSaveDirectory, textBoxNoteTitle.Text + ".pns");
 
             if (System.IO.File.Exists(filePath))
             {
@@ -90,6 +90,17 @@ namespace Postie_Notes
         {
             Properties.Settings.Default.DiscardNote = "0";
 
+            switch (Properties.Settings.Default.NoteColour)
+            {
+                case "blue":
+
+                    break;
+                case "":
+
+                    break;
+            
+            }
+
             using (RijndaelManaged symmetricKey = new RijndaelManaged())
             {
                 symmetricKey.Mode = CipherMode.CBC;
@@ -103,7 +114,7 @@ namespace Postie_Notes
         // Encrypt note text.
         private void EncryptNoteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            string sPlainText = this.RichTextBox1.Text;
+            string sPlainText = this.richTextBoxNote.Text;
        
             if (!string.IsNullOrEmpty(sPlainText))
             {
@@ -111,7 +122,7 @@ namespace Postie_Notes
                 CryptoStream cryptoStream = new CryptoStream(memoryStream, this.encryptor, CryptoStreamMode.Write);
                 cryptoStream.Write(this.enc.GetBytes(sPlainText), 0, sPlainText.Length);
                 cryptoStream.FlushFinalBlock();
-                this.RichTextBox1.Text = Convert.ToBase64String(memoryStream.ToArray());
+                this.richTextBoxNote.Text = Convert.ToBase64String(memoryStream.ToArray());
                 memoryStream.Close();
                 cryptoStream.Close();
             }
@@ -122,14 +133,14 @@ namespace Postie_Notes
         {
             try
             {
-                byte[] cypherTextBytes = Convert.FromBase64String(this.RichTextBox1.Text);
+                byte[] cypherTextBytes = Convert.FromBase64String(this.richTextBoxNote.Text);
                 MemoryStream memoryStream = new MemoryStream(cypherTextBytes);
                 CryptoStream cryptoStream = new CryptoStream(memoryStream, this.decryptor, CryptoStreamMode.Read);
                 byte[] plainTextBytes = new byte[cypherTextBytes.Length];
                 int decryptedByteCount = cryptoStream.Read(plainTextBytes, 0, plainTextBytes.Length);
                 memoryStream.Close();
                 cryptoStream.Close();
-                this.RichTextBox1.Text = this.enc.GetString(plainTextBytes, 0, decryptedByteCount);
+                this.richTextBoxNote.Text = this.enc.GetString(plainTextBytes, 0, decryptedByteCount);
             }
             catch (Exception)
             {
@@ -139,27 +150,78 @@ namespace Postie_Notes
 
         private void CutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.RichTextBox1.Cut();
+            this.richTextBoxNote.Cut();
         }
 
         private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.RichTextBox1.Copy();
+            this.richTextBoxNote.Copy();
         }
 
         private void PasteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.RichTextBox1.Paste();
+            this.richTextBoxNote.Paste();
         }
 
         private void DeleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.RichTextBox1.Text.Trim();
+            this.richTextBoxNote.Text.Trim();
         }
 
         private void SelectAllToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            this.RichTextBox1.SelectAll();
+            this.richTextBoxNote.SelectAll();
+        }
+
+        private void BlueToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.richTextBoxNote.BackColor = Color.PowderBlue;
+            this.textBoxNoteTitle.BackColor = Color.PowderBlue;
+            this.BackColor = Color.PowderBlue;
+
+
+        }
+
+        private void GreenToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.richTextBoxNote.BackColor = Color.PaleGreen;
+            this.textBoxNoteTitle.BackColor = Color.PaleGreen;
+            this.BackColor = Color.PaleGreen;
+        }
+
+        private void PinkToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PurpleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void WhiteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void YellowToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void YellowToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DeleteNoteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void HideToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -58,5 +58,17 @@ namespace Postie_Notes.Properties {
                 this["DAmount"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("yellow")]
+        public string NoteColour {
+            get {
+                return ((string)(this["NoteColour"]));
+            }
+            set {
+                this["NoteColour"] = value;
+            }
+        }
     }
 }
