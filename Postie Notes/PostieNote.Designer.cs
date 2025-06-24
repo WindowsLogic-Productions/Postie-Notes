@@ -127,7 +127,7 @@
             this.HideToolStripMenuItem});
             this.TextBoxOptions.Name = "TextBoxOptions";
             this.TextBoxOptions.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.TextBoxOptions.Size = new System.Drawing.Size(218, 402);
+            this.TextBoxOptions.Size = new System.Drawing.Size(218, 380);
             // 
             // EncryptNoteToolStripMenuItem
             // 
@@ -278,7 +278,7 @@
             this.richTextBoxNote.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBoxNote.BackColor = System.Drawing.Color.LightGreen;
+            this.richTextBoxNote.BackColor = System.Drawing.Color.LemonChiffon;
             this.richTextBoxNote.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBoxNote.ContextMenuStrip = this.TextBoxOptions;
             this.richTextBoxNote.Location = new System.Drawing.Point(3, 37);

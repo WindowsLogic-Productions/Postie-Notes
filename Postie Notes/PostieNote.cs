@@ -179,7 +179,8 @@ namespace Postie_Notes
             this.textBoxNoteTitle.BackColor = Color.PowderBlue;
             this.BackColor = Color.PowderBlue;
 
-
+            this.textBoxNoteTitle.ForeColor = Color.Black;
+            this.richTextBoxNote.ForeColor = Color.Black;
         }
 
         private void GreenToolStripMenuItem_Click(object sender, EventArgs e)
@@ -187,16 +188,29 @@ namespace Postie_Notes
             this.richTextBoxNote.BackColor = Color.PaleGreen;
             this.textBoxNoteTitle.BackColor = Color.PaleGreen;
             this.BackColor = Color.PaleGreen;
+
+            this.textBoxNoteTitle.ForeColor = Color.Black;
+            this.richTextBoxNote.ForeColor = Color.Black;
         }
 
         private void PinkToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.richTextBoxNote.BackColor = Color.Pink;
+            this.textBoxNoteTitle.BackColor = Color.Pink;
+            this.BackColor = Color.Pink;
 
+            this.textBoxNoteTitle.ForeColor = Color.Black;
+            this.richTextBoxNote.ForeColor = Color.Black;
         }
 
         private void PurpleToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.richTextBoxNote.BackColor = Color.Plum;
+            this.textBoxNoteTitle.BackColor = Color.Plum;
+            this.BackColor = Color.Plum;
 
+            this.textBoxNoteTitle.ForeColor = Color.Black;
+            this.richTextBoxNote.ForeColor = Color.Black;
         }
 
         private void WhiteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -205,6 +219,7 @@ namespace Postie_Notes
             this.textBoxNoteTitle.BackColor = Color.White;
             this.BackColor = Color.White;
 
+            this.textBoxNoteTitle.ForeColor = Color.Black;
             this.richTextBoxNote.ForeColor = Color.Black;
         }
 
@@ -214,12 +229,18 @@ namespace Postie_Notes
             this.textBoxNoteTitle.BackColor = Color.Black;
             this.BackColor = Color.Black;
 
+            this.textBoxNoteTitle.ForeColor = Color.White;
             this.richTextBoxNote.ForeColor = Color.White;
         }
 
         private void YellowToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.richTextBoxNote.BackColor = Color.LemonChiffon;
+            this.textBoxNoteTitle.BackColor = Color.LemonChiffon;
+            this.BackColor = Color.LemonChiffon;
 
+            this.textBoxNoteTitle.ForeColor = Color.Black;
+            this.richTextBoxNote.ForeColor = Color.Black;
         }
 
         private void DeleteNoteToolStripMenuItem_Click(object sender, EventArgs e)
