@@ -50,8 +50,8 @@
             this.PinkToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.PurpleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.WhiteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.BlackToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.YellowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.YellowToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.DeleteNoteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.HideToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -120,14 +120,14 @@
             this.PinkToolStripMenuItem,
             this.PurpleToolStripMenuItem,
             this.WhiteToolStripMenuItem,
+            this.BlackToolStripMenuItem,
             this.YellowToolStripMenuItem,
-            this.YellowToolStripMenuItem1,
             this.ToolStripSeparator3,
             this.DeleteNoteToolStripMenuItem,
             this.HideToolStripMenuItem});
             this.TextBoxOptions.Name = "TextBoxOptions";
             this.TextBoxOptions.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
-            this.TextBoxOptions.Size = new System.Drawing.Size(218, 380);
+            this.TextBoxOptions.Size = new System.Drawing.Size(218, 402);
             // 
             // EncryptNoteToolStripMenuItem
             // 
@@ -237,19 +237,19 @@
             this.WhiteToolStripMenuItem.Text = "White";
             this.WhiteToolStripMenuItem.Click += new System.EventHandler(this.WhiteToolStripMenuItem_Click);
             // 
+            // BlackToolStripMenuItem
+            // 
+            this.BlackToolStripMenuItem.Name = "BlackToolStripMenuItem";
+            this.BlackToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
+            this.BlackToolStripMenuItem.Text = "Black";
+            this.BlackToolStripMenuItem.Click += new System.EventHandler(this.BlackToolStripMenuItem_Click);
+            // 
             // YellowToolStripMenuItem
             // 
             this.YellowToolStripMenuItem.Name = "YellowToolStripMenuItem";
             this.YellowToolStripMenuItem.Size = new System.Drawing.Size(217, 22);
-            this.YellowToolStripMenuItem.Text = "Black";
+            this.YellowToolStripMenuItem.Text = "Yellow";
             this.YellowToolStripMenuItem.Click += new System.EventHandler(this.YellowToolStripMenuItem_Click);
-            // 
-            // YellowToolStripMenuItem1
-            // 
-            this.YellowToolStripMenuItem1.Name = "YellowToolStripMenuItem1";
-            this.YellowToolStripMenuItem1.Size = new System.Drawing.Size(217, 22);
-            this.YellowToolStripMenuItem1.Text = "Yellow";
-            this.YellowToolStripMenuItem1.Click += new System.EventHandler(this.YellowToolStripMenuItem1_Click);
             // 
             // ToolStripSeparator3
             // 
@@ -335,8 +335,8 @@
         internal System.Windows.Forms.ToolStripMenuItem PinkToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem PurpleToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem WhiteToolStripMenuItem;
+        internal System.Windows.Forms.ToolStripMenuItem BlackToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem YellowToolStripMenuItem;
-        internal System.Windows.Forms.ToolStripMenuItem YellowToolStripMenuItem1;
         internal System.Windows.Forms.ToolStripSeparator ToolStripSeparator3;
         internal System.Windows.Forms.ToolStripMenuItem DeleteNoteToolStripMenuItem;
         internal System.Windows.Forms.ToolStripMenuItem HideToolStripMenuItem;

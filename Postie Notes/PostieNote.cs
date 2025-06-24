@@ -201,7 +201,20 @@ namespace Postie_Notes
 
         private void WhiteToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            this.richTextBoxNote.BackColor = Color.White;
+            this.textBoxNoteTitle.BackColor = Color.White;
+            this.BackColor = Color.White;
 
+            this.richTextBoxNote.ForeColor = Color.Black;
+        }
+
+        private void BlackToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.richTextBoxNote.BackColor = Color.Black;
+            this.textBoxNoteTitle.BackColor = Color.Black;
+            this.BackColor = Color.Black;
+
+            this.richTextBoxNote.ForeColor = Color.White;
         }
 
         private void YellowToolStripMenuItem_Click(object sender, EventArgs e)
@@ -209,14 +222,21 @@ namespace Postie_Notes
 
         }
 
-        private void YellowToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void DeleteNoteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            if (File.Exists(Properties.Settings.Default.DefaultSaveDirectory + "\"" + textBoxNoteTitle.Text + ".pns") == true)
+            {
+                if (MessageBox.Show("Are you sure you want to delete this note?", "Delete Note", MessageBoxButtons.YesNo,MessageBoxIcon.Question) == DialogResult.Yes)
+                {
+                    Properties.Settings.Default.DiscardNote = "1";
+                    Properties.Settings.Default.Save();
+                }
+            }
+            else
+            {
+                Properties.Settings.Default.DiscardNote = "1";
+                this.Close();
+            }
         }
 
         private void HideToolStripMenuItem_Click(object sender, EventArgs e)
