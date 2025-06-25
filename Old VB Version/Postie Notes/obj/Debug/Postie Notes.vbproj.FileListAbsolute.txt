@@ -25,3 +25,17 @@ J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie Notes.pdb
 J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie Notes.vbprojAssemblyReference.cache
 J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie Notes.vbproj.CoreCompileInputs.cache
 J:\Projects\Postie-Notes\Postie Notes\obj\Debug\Postie_Notes.PostieSettings.resources
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\bin\Debug\Postie Notes.exe.config
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\bin\Debug\Postie Notes.exe
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\bin\Debug\Postie Notes.pdb
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\bin\Debug\Postie Notes.xml
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\obj\Debug\Postie Notes.vbprojAssemblyReference.cache
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\obj\Debug\Postie_Notes.PostieMain.resources
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\obj\Debug\Postie_Notes.Resources.resources
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\obj\Debug\Postie_Notes.PostieNote.resources
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\obj\Debug\Postie_Notes.PostieSettings.resources
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\obj\Debug\Postie Notes.vbproj.GenerateResource.cache
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\obj\Debug\Postie Notes.vbproj.CoreCompileInputs.cache
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\obj\Debug\Postie Notes.exe
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\obj\Debug\Postie Notes.xml
+J:\Projects\Postie-Notes\Old VB Version\Postie Notes\obj\Debug\Postie Notes.pdb

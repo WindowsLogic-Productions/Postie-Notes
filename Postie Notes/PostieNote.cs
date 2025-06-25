@@ -264,5 +264,16 @@ namespace Postie_Notes
         {
             this.Close();
         }
+
+        private void PostieNote_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (Properties.Settings.Default.DiscardNote == "1")
+            {
+            }
+            else
+            {
+                richTextBoxNote.SaveFile(Properties.Settings.Default.DefaultSaveDirectory + "\\" + textBoxNoteTitle.Text + ".pns");
+            }
+        }
     }
 }

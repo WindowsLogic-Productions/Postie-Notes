@@ -302,6 +302,7 @@
             this.MinimumSize = new System.Drawing.Size(216, 216);
             this.Name = "PostieNote";
             this.ShowInTaskbar = false;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.PostieNote_FormClosing);
             this.Load += new System.EventHandler(this.PostieNote_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PostieNote_MouseDown);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PostieNote_MouseMove);

@@ -42,6 +42,7 @@
             this.ClearMemoboardToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ToolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.SettingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,6 +86,7 @@
             this.OpenMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.O)));
             this.OpenMenuItem.Size = new System.Drawing.Size(267, 22);
             this.OpenMenuItem.Text = "Open note...";
+            this.OpenMenuItem.Click += new System.EventHandler(this.OpenMenuItem_Click);
             // 
             // OpenNoteToolStripMenuItem
             // 
@@ -93,6 +95,7 @@
             | System.Windows.Forms.Keys.O)));
             this.OpenNoteToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.OpenNoteToolStripMenuItem.Text = "Open note externally...";
+            this.OpenNoteToolStripMenuItem.Click += new System.EventHandler(this.OpenNoteToolStripMenuItem_Click);
             // 
             // ToolStripSeparator2
             // 
@@ -148,6 +151,10 @@
             this.SettingsToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.SettingsToolStripMenuItem.Text = "Settings";
             // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // PostieMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -160,6 +167,7 @@
             this.MinimumSize = new System.Drawing.Size(640, 480);
             this.Name = "PostieMain";
             this.Text = "Postie Memoboard";
+            this.Load += new System.EventHandler(this.PostieMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
@@ -182,6 +190,7 @@
         internal System.Windows.Forms.ToolStripMenuItem ClearMemoboardToolStripMenuItem;
         internal System.Windows.Forms.ToolStripSeparator ToolStripSeparator3;
         internal System.Windows.Forms.ToolStripMenuItem SettingsToolStripMenuItem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 
