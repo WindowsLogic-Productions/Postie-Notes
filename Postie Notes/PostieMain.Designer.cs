@@ -108,6 +108,7 @@
             this.BackupNotesToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.B)));
             this.BackupNotesToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.BackupNotesToolStripMenuItem.Text = "Backup notes...";
+            this.BackupNotesToolStripMenuItem.Click += new System.EventHandler(this.BackupNotesToolStripMenuItem_Click);
             // 
             // ToolStripSeparator1
             // 
@@ -120,6 +121,7 @@
             this.ExitToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.F4)));
             this.ExitToolStripMenuItem.Size = new System.Drawing.Size(267, 22);
             this.ExitToolStripMenuItem.Text = "Exit";
+            this.ExitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
             // 
             // MemoboardToolStripMenuItem
             // 
@@ -138,6 +140,7 @@
             | System.Windows.Forms.Keys.X)));
             this.ClearMemoboardToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.ClearMemoboardToolStripMenuItem.Text = "Clear memoboard";
+            this.ClearMemoboardToolStripMenuItem.Click += new System.EventHandler(this.ClearMemoboardToolStripMenuItem_Click);
             // 
             // ToolStripSeparator3
             // 
@@ -150,6 +153,7 @@
             this.SettingsToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
             this.SettingsToolStripMenuItem.Size = new System.Drawing.Size(243, 22);
             this.SettingsToolStripMenuItem.Text = "Settings";
+            this.SettingsToolStripMenuItem.Click += new System.EventHandler(this.SettingsToolStripMenuItem_Click);
             // 
             // openFileDialog1
             // 
