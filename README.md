@@ -1,7 +1,7 @@
-# FM2K-Controls
+# Postie Notes
 
-**FM2K-Controls** is a simple tool that helps you set up and use controllers with FM2K on your Windows computer.  
-It works on Windows XP and all newer versions.
+**Postie Notes** is a simple tool that helps you set up and use controllers with FM2K on your Windows computer.  
+It works on Windows 98 SE and all newer versions.
 
 ---
 
@@ -13,7 +13,7 @@ It works on Windows XP and all newer versions.
 - **Encryption:** Encrypt your notes easily without any knowledge on encryption or decryption.
 - **Colours:** Choose the colour you want notes to be.
 - **Password protection:** Password protect your encrypted notes to avoid tampering by outside sources. (In-development)
-- **Works on most Windows PCs:** Supports Windows XP and newer, so you don’t need the latest computer.
+- **Works on most Windows PCs:** Supports Windows 98 SE and newer, so you don’t need the latest computer.
 - **No complicated steps:** Just download, open, and click a direction or button to configure your controller.
 
 ---
