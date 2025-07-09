@@ -3,8 +3,6 @@
 **Postie Notes** is a simple tool that helps you set up and use controllers with FM2K on your Windows computer.  
 It works on Windows 98 SE and all newer versions.
 
----
-
 ## What does it do?
 
 - **Save your ideas:** Jot down any idea you have and when you close a note, it automatically saves.
@@ -14,9 +12,6 @@ It works on Windows 98 SE and all newer versions.
 - **Colours:** Choose the colour you want notes to be.
 - **Password protection:** Password protect your encrypted notes to avoid tampering by outside sources. (In-development)
 - **Works on most Windows PCs:** Supports Windows 98 SE and newer, so you don’t need the latest computer.
-- **No complicated steps:** Just download, open, and click a direction or button to configure your controller.
-
----
 
 ## How to Use
 
@@ -29,8 +24,6 @@ It works on Windows 98 SE and all newer versions.
 
 3. **Get Started**
    - Create a new note with "File > New note" and jot your ideas down.
-
----
 
 ## License
 
